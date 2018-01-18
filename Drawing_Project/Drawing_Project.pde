@@ -11,10 +11,11 @@ Drawing Project
 color black = #000000, red = #ff0000, orange = #FFA500, 
 yellow = #FFFF00, purple = #800080, lime = #00FF00,
 pink = #FFC0CB, blue = #0000FF, white = #FFFFFF;
+color inside = white;
+PImage[] image = new PImage[4];
 
 void setup(){
 size (1000,800);
-
 println ("Start of Console");
 
 //Shapes
@@ -53,6 +54,7 @@ rectMode(CORNER);
   ellipse(830,750,20,20);
   ellipse(870,750,10,10);
 fill(white);
+line(900,600,900,800);
 
 rect(0,0,200,1000);//Left rect
   rect(20,50,160,100);
@@ -60,4 +62,12 @@ rect(0,0,200,1000);//Left rect
   rect(20,350,160,100);
   rect(20,500,160,100);
   rect(20,650,160,100);
+}
+
+void Image(){
+image[0] = loadImage("Dinosaur.jpg");
+image[1] = loadImage("Drake.jpg");
+image[2] = loadImage("Turtle.jpg");
+image[3] = loadImage("Ice cream.jpg");
+
 }
